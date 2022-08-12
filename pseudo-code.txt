@@ -1,0 +1,40 @@
+     cliques sur new game :
+         Let score round player 1 = 0
+         Let score round player 2 = 0
+         Let score global player 1 = 0
+         Let score global player 2 =0
+         Let jet de dé = 0
+         Let a qui de jouer = player 1
+     
+     Si score global player 1 ou score global player 2 >= 100
+         Si score global player 1 >=100
+             Afficher winner player 1
+             Tout réassigner à 0 
+         Sinon 
+             afficher winner player 2
+             Tout réassigner 0
+     
+     Si jet de dé = 1
+         Alert perdu
+         Si a qui de jouer = player 1
+             A qui de jouer = player 2
+             Score round 1 = 0
+         Sinon
+             A qui de jouer = player 1
+             Score round 2 = 0
+     
+     Clique sur roll dice
+         jet de dé = nombre aléatoire de 1 à 6
+         Afficher le dé correspondant 
+         Si a qui de jouer = player 1
+             Score round player 1 =+ jet de dé
+         Sinon 
+             Score round player 2 =+ jet de dé
+     
+     Clique sur hold
+         Si a qui de jouer = player 1
+             Score global pl 1 =+ score round pl 1
+             A qui de jouer = player 2
+         Sinon
+             Score global pl 2 =+ score round pl 2
+             A qui de jouer = player 1
