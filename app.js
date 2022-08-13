@@ -19,7 +19,7 @@ const reinitialize = () => {
     document.getElementById('scoreG1').innerHTML = scoreG1;
     document.getElementById('scoreR2').innerHTML = scoreR2;
     document.getElementById('scoreG2').innerHTML = scoreG2;
-    document.getElementById('dice').innerHTML = dice;
+    document.getElementById('dice').src = `images/dice.png`;
 
 }
 
@@ -31,7 +31,7 @@ const roll = document.getElementById('roll');
 
 const rollTheDice = () => {
     dice = 1 + Math.floor(Math.random() * 6);
-    document.getElementById('dice').innerHTML = dice;
+    document.getElementById('dice').src = `images/dice-${dice}.png`;
    
     if (actualPlayer == 1) {
         scoreR1 += dice;
