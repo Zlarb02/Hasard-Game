@@ -28,15 +28,42 @@
 </head>
 
 <body>
-  <div class=btn id=new-game>NEW GAME</div>
-  <img src="images/dice.png" alt="Dice" id="dice">
-  <div class=btn id=roll>ROLL DICE</div>
-  <div class=btn id=hold>HOLD</div>
-  <p>PLAYER 1</p><div id=scoreG1>g1</div>
-  <p>PLAYER 2</p><div id=scoreG2>g2</div>
-  <p>CURRENT</p><div id=scoreR1>r1</div>
-  <p>CURRENT</p><div id=scoreR2>r2</div>
-
+  <div class="container all-container">
+    <div class="container scores-container">
+      <div class="row text-center scores-row">
+        <div class="col-6 text-center player1">
+          PLAYER 1
+          <br>
+          <span class="score-global" id="scoreG1"></span>
+          <div class="current">
+            CURRENT
+            <br>
+            <span class="score-round" id="scoreR1"></span>
+          </div>
+        </div>
+        <div class="col-6 player2">
+          PLAYER 2
+          <br>
+          <span class="score-global" id="scoreG2"></span>
+          <div class="current">
+            CURRENT
+            <br>
+            <span class="score-round" id="scoreR2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container btn-n-dice-container">
+      <div class="row text-center">
+        <div class="col-12">
+          <div class="btn col-12 justify-content-center" id="new-game">NEW GAME</div>
+          <img class="justify-content-center" src="images/dice-5.png" alt="Dice" id="dice">
+          <div class="btn col-12" id="roll">ROLL DICE</div>
+          <div class="btn col-12" id="hold">HOLD</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>

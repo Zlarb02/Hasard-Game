@@ -19,7 +19,7 @@ const reinitialize = () => {
     document.getElementById('scoreG1').innerHTML = scoreG1;
     document.getElementById('scoreR2').innerHTML = scoreR2;
     document.getElementById('scoreG2').innerHTML = scoreG2;
-    document.getElementById('dice').src = `images/dice.png`;
+    document.getElementById('dice').src = `images/dice-5.png`;
 
 }
 
