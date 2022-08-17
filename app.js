@@ -5,6 +5,17 @@ let scoreG2 = 0;
 let dice = 0;
 let actualPlayer = 1;
 
+const changeBackground = () => {
+    if (actualPlayer == 1) {
+        document.querySelector(".player1").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".player2").style.backgroundColor = "#FDFEFE";
+    }
+    else {
+        document.querySelector(".player2").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".player1").style.backgroundColor = "#FDFEFE";
+    }
+}
+
 const newGame = document.getElementById('new-game');
 
 const reinitialize = () => {
@@ -21,6 +32,7 @@ const reinitialize = () => {
     document.getElementById('scoreG2').innerHTML = scoreG2;
     document.getElementById('dice').src = `images/dice-5.png`;
 
+    changeBackground();
 }
 
 reinitialize();
@@ -54,6 +66,7 @@ const rollTheDice = () => {
         }
         alert('pas cette fois');
     }
+    changeBackground();
 }
 
 roll.addEventListener('click', rollTheDice);
@@ -84,6 +97,11 @@ const holdTheCurrent = () => {
         alert('joueur 2 gagne');
         reinitialize();
     } 
+    changeBackground();
 }
 
 hold.addEventListener('click', holdTheCurrent);
+
+
+
+
