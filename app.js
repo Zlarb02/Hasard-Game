@@ -7,12 +7,12 @@ let actualPlayer = 1;
 
 const changeBackground = () => {
     if (actualPlayer == 1) {
-        document.querySelector(".player1").style.backgroundColor = "#F2F3F4";
-        document.querySelector(".player2").style.backgroundColor = "#FDFEFE";
-    }
-    else {
         document.querySelector(".player2").style.backgroundColor = "#F2F3F4";
         document.querySelector(".player1").style.backgroundColor = "#FDFEFE";
+    }
+    else {
+        document.querySelector(".player1").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".player2").style.backgroundColor = "#FDFEFE";
     }
 }
 

@@ -53,12 +53,12 @@ html, body {
 }
 
 .player1{
-  background-color: #F2F3F4;
+  background-color: #FDFEFE;
   height: 100%;
 }
 
 .player2{
-  background-color: #FDFEFE;
+  background-color: #F2F3F4;
   height: 100%;
 }
 
