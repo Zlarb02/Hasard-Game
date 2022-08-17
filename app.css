@@ -15,6 +15,8 @@ html, body {
   background: radial-gradient(ellipse at center, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b375', endColorstr='#d7a66a', GradientType=1 );
   height: 100%;
+  max-height: 100vw;
+  min-height: 320px;
 }
 
 .scores-container{
@@ -22,8 +24,10 @@ html, body {
   top: 3%;
   left: 6%;
   height: 94%;
+  max-height: 90vw;
   width: 88%;
   z-index: 1;
+  min-height: 300px;
 }
 
 .scores-row{
@@ -32,11 +36,13 @@ html, body {
 }
 
 .score-global{
-  color: red
+  color: #fe3a44;
+  font-size: 5vw;
 }
 
 .score-round{
   color: white;
+  font-size: 2.5vw;
 }
 
 .btn-n-dice-container{
@@ -46,6 +52,7 @@ html, body {
   height: 90%;
   width: 20%;
   z-index: 2;
+  max-height: 100vw;
 }
 
 .player1{
@@ -61,10 +68,11 @@ html, body {
 .current {
   position: relative;
   left: 35%;
+  top: 40%;
   width: 30%;
   height: 7vw;
   font-size: 1.5vw;
-  background-color: red;
+  background-color: #fe3a44;
 }
 
 #dice{
