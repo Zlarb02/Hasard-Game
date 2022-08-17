@@ -64,7 +64,6 @@ const rollTheDice = () => {
             document.getElementById('scoreR2').innerHTML = scoreR2;
             actualPlayer = 1;
         }
-        alert('pas cette fois');
     }
     changeBackground();
 }
