@@ -8,11 +8,15 @@ let actualPlayer = 1;
 const changeBackground = () => {
     if (actualPlayer == 1) {
         document.querySelector(".player1").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".point-joueur1").style.display = "inline";
         document.querySelector(".player2").style.backgroundColor = "#FDFEFE";
+        document.querySelector(".point-joueur2").style.display = "none";
     }
     else {
         document.querySelector(".player2").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".point-joueur2").style.display = "inline";
         document.querySelector(".player1").style.backgroundColor = "#FDFEFE";
+        document.querySelector(".point-joueur1").style.display = "none";
     }
 }
 

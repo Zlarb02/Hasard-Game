@@ -58,6 +58,11 @@ html, body {
 .player1 > p, .player2 > p {
   position:relative;
   top:20%;
+
+}
+
+.point-joueur1, .point-joueur2 {
+  color:#fe3a44;
 }
 
 .player1{
