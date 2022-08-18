@@ -1,9 +1,12 @@
 # Hasard-Game
 
+https://zlarb02.github.io/Hasard-Game/app.html
+
 Création d’un petit jeu sur navigateur web à l’aide du DOM.
 En fin de prestation, le commanditaire doit recevoir les différents éléments suivants :
 - Un jeu fonctionnel
 - Une interface lisible qui correspond à la maquette fournie.
+
 Ceci implique plusieurs fonctionnalités globales :
 En front-desk (côté client) :
 - La possibilité de créer une nouvelle partie
@@ -19,18 +22,17 @@ Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
 Lors de son tour, le joueur peut décider à tout moment de:
 - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le tour de l’autre joueur.
 - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
-Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+- Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 
 Modalités / Restrictions :
 - Votre code sera structuré
 - Le jeu devra être fonctionnel
 - Les ressources seront disponibles dans un dossier images
-o La font sera Lato (google font) : https://fonts.google.com/ specimen/Lato
-o Le Framework CSS de votre choix
+- La font sera Lato (google font) : https://fonts.google.com/ specimen/Lato
+- Le Framework CSS de votre choix
 
 1. Connaître et utiliser un environnement de développement (2 points).
-2. Écrire un algorithme et l’intégrer dans une page web avec des scripts événementiels et avec un langage
-de script côté client (5 points).
+2. Écrire un algorithme et l’intégrer dans une page web avec des scripts événementiels et avec un langage de script côté client (5 points).
 3. Utilisation des normes ECMAScript (JS) et du DOM (5 points).
 4. Connaissance et utilisation d’un framework de présentation de type adaptatif (5 points).
 5. Déploiement de la réalisation en ligne (3 points).
