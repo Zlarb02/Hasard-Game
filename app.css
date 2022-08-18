@@ -55,6 +55,33 @@ html, body {
   max-height: 100vw;
 }
 
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover{
+  background-color: #ad7f4b47;
+}
+
+#plus{
+  width: 2.6w;
+  height: 2.6vw;
+}
+
+#roll-icon{
+  width: 3.2vw;
+  height: 3.2vw;
+}
+
+#save-icon{
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+
+
 .player1 > p, .player2 > p {
   position:relative;
   top:20%;
@@ -86,7 +113,9 @@ html, body {
 #dice{
   width: 10vw;
   height: 10vw;
-}@media screen and (orientation: landscape) and (min-aspect-ratio:20/9) {
+}
+
+@media screen and (orientation: landscape) and (min-aspect-ratio:20/9) {
   .player1 > p, .player2 > p, .score-global {
     top:0%;
   }
@@ -108,6 +137,11 @@ html, body {
   html, body {
     font-size: 2vh;
   }
+
+  .btn-n-dice-container{
+    left: 25%;
+    width: 50%;
+  }
   
   .scores-row{
     font-size: 3vh;
@@ -124,8 +158,8 @@ html, body {
   .current {
     position: relative;
     left: 35%;
-    top: 40%;
-    width: 30%;
+    top: 55%;
+    width: 50%;
     height: 7vh;
     font-size: 1.5vh;
     background-color: #fe3a44;
@@ -136,22 +170,44 @@ html, body {
   }
 
   #dice{
-    width: 8vh;
-    height: 8vh;
+    width: 10vh;
+    height: 10vh;
+  }
+
+  #plus{
+    width: 3.6w;
+    height: 3.6vw;
+  }
+  
+  #roll-icon{
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+  
+  #save-icon{
+    width:3.5vw;
+    height: 3.5vw;
   }
 }
 
 @media screen and (orientation: portrait) and (max-width: 560px){
-  .btn-n-dice-container{
-    left: 30.5%;
-    width: 40%;
-  }
-
   .current {
     left: 10%;
-    top: 40%;
+    top: 55%;
     width: 80%;
     height: 7vh;
     font-size: 1.5vh;
+  }
+}
+
+@media screen and (min-width: 3600px){
+  .btn-n-dice-container{
+    position: absolute;
+    top: 13%;
+    left: 38%;
+    height: 90%;
+    width: 30%;
+    z-index: 2;
+    max-height: 100vw;
   }
 }
