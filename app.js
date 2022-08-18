@@ -5,17 +5,21 @@ let scoreG2 = 0;
 let dice = 0;
 let actualPlayer = 1;
 
-const changeBackground = () => {
+const changeActualPlayerDisplay= () => {
     if (actualPlayer == 1) {
         document.querySelector(".player1").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".player1 > p").style.color = "black";
         document.querySelector(".point-joueur1").style.display = "inline";
         document.querySelector(".player2").style.backgroundColor = "#FDFEFE";
+        document.querySelector(".player2 > p").style.color = "grey";
         document.querySelector(".point-joueur2").style.display = "none";
     }
     else {
         document.querySelector(".player2").style.backgroundColor = "#F2F3F4";
+        document.querySelector(".player2 > p").style.color = "black";
         document.querySelector(".point-joueur2").style.display = "inline";
         document.querySelector(".player1").style.backgroundColor = "#FDFEFE";
+        document.querySelector(".player1 > p").style.color = "grey";
         document.querySelector(".point-joueur1").style.display = "none";
     }
 }
@@ -36,7 +40,7 @@ const reinitialize = () => {
     document.getElementById('scoreG2').innerHTML = scoreG2;
     document.getElementById('dice').src = `images/dice-5.png`;
 
-    changeBackground();
+    changeActualPlayerDisplay();
 }
 
 reinitialize();
@@ -69,7 +73,7 @@ const rollTheDice = () => {
             actualPlayer = 1;
         }
     }
-    changeBackground();
+    changeActualPlayerDisplay();
 }
 
 roll.addEventListener('click', rollTheDice);
@@ -100,7 +104,7 @@ const holdTheCurrent = () => {
         alert('joueur 2 gagne');
         reinitialize();
     } 
-    changeBackground();
+    changeActualPlayerDisplay();
 }
 
 hold.addEventListener('click', holdTheCurrent);
