@@ -1,25 +1,97 @@
-html, body {
-  height: 100%;
+html,
+body {
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2vw;
   overflow: hidden;
 }
 
-.all-container{
-  background: rgba(230,179,117,1);
-  background: -moz-radial-gradient(center, ellipse cover, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(230,179,117,1)), color-stop(50%, rgba(166,120,63,1)), color-stop(51%, rgba(148,107,56,1)), color-stop(100%, rgba(215,166,106,1)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
-  background: radial-gradient(ellipse at center, rgba(230,179,117,1) 0%, rgba(166,120,63,1) 50%, rgba(148,107,56,1) 51%, rgba(215,166,106,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b375', endColorstr='#d7a66a', GradientType=1 );
+html,
+body,
+.all-container,
+.scores-row,
+.player1,
+.player2 {
   height: 100%;
 }
 
-.scores-container{
+.scores-container,
+.btn-n-dice-container {
   position: absolute;
+}
+
+.current,
+.player1 > p,
+.player2 > p,
+.score-global,
+#dice,
+#roll,
+#hold {
+  position: relative;
+}
+
+.point-joueur1,
+.point-joueur2,
+.score-global {
+  color: #fe3a44;
+}
+
+.all-container {
+  background: rgba(230, 179, 117, 1);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(230, 179, 117, 1) 0%,
+    rgba(166, 120, 63, 1) 50%,
+    rgba(148, 107, 56, 1) 51%,
+    rgba(215, 166, 106, 1) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(230, 179, 117, 1)),
+    color-stop(50%, rgba(166, 120, 63, 1)),
+    color-stop(51%, rgba(148, 107, 56, 1)),
+    color-stop(100%, rgba(215, 166, 106, 1))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(230, 179, 117, 1) 0%,
+    rgba(166, 120, 63, 1) 50%,
+    rgba(148, 107, 56, 1) 51%,
+    rgba(215, 166, 106, 1) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(230, 179, 117, 1) 0%,
+    rgba(166, 120, 63, 1) 50%,
+    rgba(148, 107, 56, 1) 51%,
+    rgba(215, 166, 106, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(230, 179, 117, 1) 0%,
+    rgba(166, 120, 63, 1) 50%,
+    rgba(148, 107, 56, 1) 51%,
+    rgba(215, 166, 106, 1) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(230, 179, 117, 1) 0%,
+    rgba(166, 120, 63, 1) 50%,
+    rgba(148, 107, 56, 1) 51%,
+    rgba(215, 166, 106, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6b375', endColorstr='#d7a66a', GradientType=1);
+}
+
+.scores-container {
   top: 3%;
   left: 6%;
   height: 94%;
@@ -28,25 +100,21 @@ html, body {
   box-shadow: 2px 8px 20px black;
 }
 
-.scores-row{
-  height: 100%;
+.scores-row {
   font-size: 3vw;
 }
 
-.score-global{
-  position: relative;
-  top:20%;
-  color: #fe3a44;
+.score-global {
+  top: 20%;
   font-size: 5vw;
 }
 
-.score-round{
+.score-round {
   color: white;
   font-size: 2.5vw;
 }
 
-.btn-n-dice-container{
-  position: absolute;
+.btn-n-dice-container {
   top: 13%;
   left: 35%;
   height: 90%;
@@ -55,159 +123,131 @@ html, body {
   max-height: 100vw;
 }
 
-.btn{
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #ad7f4b47;
 }
 
-#plus{
+#plus {
   width: 2.6w;
   height: 2.6vw;
 }
 
-#roll-icon{
+#roll-icon {
   width: 3.2vw;
   height: 3.2vw;
 }
 
-#save-icon{
+#save-icon {
   width: 2.5vw;
   height: 2.5vw;
 }
 
-
-
-.player1 > p, .player2 > p {
-  position:relative;
-  top:20%;
-
-}
-
-.point-joueur1, .point-joueur2 {
-  color:#fe3a44;
-}
-
-.player1{
-  height: 100%;
-}
-
-.player2{
-  height: 100%;
+.player1 > p,
+.player2 > p {
+  top: 20%;
 }
 
 .current {
-  position: relative;
   left: 35%;
   top: 40%;
   width: 30%;
   height: 7vw;
   font-size: 1.5vw;
-  background-color: #fe3a44;
+  background-color: #ff535b;
 }
 
-#dice{
+#dice {
   width: 10vw;
   height: 10vw;
 }
 
-@media screen and (orientation: landscape) and (min-aspect-ratio:20/9) {
-  .player1 > p, .player2 > p, .score-global {
-    top:0%;
+@media screen and (orientation: landscape) and (min-aspect-ratio: 20/9) {
+  .player1 > p,
+  .player2 > p,
+  .score-global {
+    top: 0%;
   }
 }
-@media screen and (orientation: landscape) and (min-aspect-ratio:14/9) {
+
+@media screen and (orientation: landscape) and (min-aspect-ratio: 14/9) {
   .current {
-    position: relative;
-    left: 35%;
     top: 24%;
-    width: 30%;
-    height: 7vw;
-    font-size: 1.5vw;
-  }
-  .player1 > p, .player2 > p, .score-global {
-    top:12%;
-  }
-}
-@media screen and (orientation: portrait) {
-  html, body {
-    font-size: 2vh;
   }
 
-  .btn-n-dice-container{
+  .player1 > p,
+  .player2 > p,
+  .score-global {
+    top: 12%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .btn-n-dice-container {
     left: 25%;
     width: 50%;
   }
-  
-  .scores-row{
+
+  .scores-row {
     font-size: 3vh;
   }
-  
-  .score-global{
+
+  .score-global {
     font-size: 5vh;
   }
-  
-  .score-round{
+
+  .score-round {
     font-size: 2.5vh;
   }
-  
+
   .current {
-    position: relative;
-    left: 35%;
     top: 55%;
     width: 50%;
     height: 7vh;
     font-size: 1.5vh;
-    background-color: #fe3a44;
   }
-  #dice, #roll, #hold{
-    position: relative;
+
+  #dice,
+  #roll,
+  #hold {
     top: 60%;
   }
 
-  #dice{
+  #dice {
     width: 10vh;
     height: 10vh;
   }
 
-  #plus{
-    width: 3.6w;
-    height: 3.6vw;
+  #plus {
+    width: 2.4vh;
+    height: 2.4vh;
   }
-  
-  #roll-icon{
-    width: 4.2vw;
-    height: 4.2vw;
+
+  #roll-icon {
+    width: 3vh;
+    height: 3vh;
   }
-  
-  #save-icon{
-    width:3.5vw;
-    height: 3.5vw;
+
+  #save-icon {
+    width: 2.3vh;
+    height: 2.3vh;
   }
 }
 
-@media screen and (orientation: portrait) and (max-width: 560px){
+@media screen and (orientation: portrait) and (max-width: 560px) {
   .current {
     left: 10%;
-    top: 55%;
-    width: 80%;
-    height: 7vh;
-    font-size: 1.5vh;
+    width: 70%;
   }
 }
 
-@media screen and (min-width: 3600px){
-  .btn-n-dice-container{
-    position: absolute;
-    top: 13%;
+@media screen and (min-width: 3600px) {
+  .btn-n-dice-container {
     left: 38%;
-    height: 90%;
-    width: 30%;
-    z-index: 2;
-    max-height: 100vw;
   }
 }
