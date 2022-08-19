@@ -188,6 +188,11 @@ body,
 }
 
 @media screen and (orientation: portrait) {
+  html,
+  body {
+    font-size: 2vh;
+  }
+
   .btn-n-dice-container {
     left: 25%;
     width: 50%;
